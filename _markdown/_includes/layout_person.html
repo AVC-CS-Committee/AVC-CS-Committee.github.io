@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <!-- 
+        STOP!! DON'T EDIT THIS FILE!
+        This html file was generated using eleventy, the static site generator.
+        If you edit this file, your changes are likely to be overwritten.
+        
+        INSTEAD: go to the `_markdown/` folder, and edit the file with the same name.
+        (Hint: it might be inside the `blog/` subfolder)
+
+        Then, run `npx @11ty/eleventy --serve` from inside the `_markdown/` folder
+        to generate a new version of this file with your changes present.
+
+        Of course, make sure you've run git pull before doing this.
+
+        Please do not manually edit the HTML, as your changes will become overwritten
+        the next time somebody else edits the file.
+    -->
+    <div id="outer">
+        <nav>
+            <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/people">People</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            <li><a href="#">link</a></li>
+            </ul>
+        </nav>
+        <!--This holds the actual page content-->
+        <div id="container">
+        <article>
+            <header>
+            <img class="pfp" src={{image}} alt="{{alt-text}}">
+            <h1>{{ title }}</h1>
+            </header>
+            <h2 class="subtitle">{{ subtitle }}</h2>
+            <p><em>Last edited: {{ edited }}</em></p>
+
+            {{ content }}
+
+            <!--List all of the blog posts by this person at the end of their profile-->
+            <hr>
+            <h1>Blog Posts:</h1> 
+            <ul>
+            {%- for post in collections.river -%}
+            <li><a href={{post.url}}>{{post.data.title}}</a>, <em>{{edited}}</em>
+            {%- endfor -%}
+            </ul>
+
+        </article>
+        </div>
+    </div>
+
+</body>
+</html>

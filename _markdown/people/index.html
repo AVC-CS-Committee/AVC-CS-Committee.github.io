@@ -1,0 +1,16 @@
+---
+layout: "layout_main.html"
+title: People
+edited: August 15, 2025
+---
+
+<ul class="box">
+{%- for post in collections.people -%}
+    <li>
+        <img src={{post.data.image}} alt="{{post.data.alt}}">
+        <h1 class="name"><a href="{{post.url}}">{{post.data.title}}</a></p>
+    </li>
+    <br>
+    <br>
+{%- endfor -%}
+</ul>

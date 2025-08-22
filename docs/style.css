@@ -1,0 +1,111 @@
+/* You can either copy the below and paste it between style tags on your HTML page, OR you can copy this to a file and name it .css and link it from your HTML page. */
+
+
+:root {
+  --bg-color:#DCE2BD; /* light green */
+  --pg-color:#f9fcea; /* very light green */
+  --accent:#93C0A4; /* dark green */
+  --accent-2:#8E9B90; /* gray */
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html, body {
+  margin:0;
+  font-family:sans-serif;
+  font-size:1.0em;
+  /* here is where you'd add a background image */
+}
+body {
+  background-color:var(--bg-color);
+}
+#container {
+  background-color:var(--pg-color);
+  width:70%;
+  border-left:100px solid var(--accent);
+  border-right:1px solid var(--accent-2);
+  position:relative;
+}
+#outer {
+  border-left:4px dotted var(--accent-2);
+  margin-left:100px;
+}
+nav {
+  background-color:var(--accent);
+  position:absolute;
+  top:100px;
+  left:50px;
+  border:1px solid var(--bg-color);
+  width:120px;
+  height:220px;
+  z-index:9;
+}
+article { 
+padding:50px;
+  line-height:1.7em;
+  
+}
+
+ul.box > li {
+  display: inline-block;
+}
+
+ul.box > li > img {
+  width: 25%;
+  border-radius: 50%;
+}
+
+img {
+    width: 50%;
+}
+
+img.pfp {
+    width: 20%;
+    border-radius: 50%;
+}
+
+h2.subtitle{
+    font-family: Consolas,Menlo,"courier new",monospace;
+    font-style: italic;
+}
+
+h2 {
+  font-size:20px;
+  border-bottom:1px solid var(--accent-2);
+  padding-bottom:8px;
+}
+nav > ul {
+  background-color:var(--accent-2);
+  margin:20px;
+  padding:0;
+  list-style:none;
+}
+nav > ul > li {
+  border-bottom:1px solid white;
+  text-align:center;
+}
+nav > ul > li:last-child {
+  border-bottom:none;
+  text-align:center;
+}
+nav > ul > li > a {
+  font-size:15px;
+  padding-top:5px;
+  padding-bottom:5px;
+  display:inline-block;
+  color:white;
+}
+ @media only screen and (max-width: 850px) {
+   nav {
+     left:0;
+   }
+   #container {
+     width:100%;
+     margin-left:0;
+   }
+   #outer {
+     margin-left:0;
+   }
+}
