@@ -102,7 +102,7 @@ nav > ul > li > a {
      position: inherit;
      width: 100%;
      height: auto ;
-     border: 0px solid var(--accent);
+     border: 1px solid var(--accent);
    }
    nav > ul {
       display: flex;
