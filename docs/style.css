@@ -53,16 +53,18 @@ ul.box > li {
 }
 
 ul.box > li > img {
-  width: 25%;
+  max-width: 12em;
   border-radius: 50%;
 }
 
 img {
-    width: 50%;
+    max-width: 20em;
+    width: 100%;
+    
 }
 
 img.pfp {
-    width: 20%;
+    max-width: 10em;
     border-radius: 50%;
 }
 
