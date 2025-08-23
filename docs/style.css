@@ -99,11 +99,26 @@ nav > ul > li > a {
 }
  @media only screen and (max-width: 850px) {
    nav {
-     left:0;
+     position: inherit;
+     width: 100%;
+     height: auto ;
+     border: 0px solid var(--accent);
+   }
+   nav > ul {
+      display: flex;
+      margin: 10px;
+      justify-content: space-evenly;
+   }
+   nav > ul > li {
+      margin: 5px;
+   }
+   nav > ul > li:last-child {
+      border-bottom: 1px solid white;
    }
    #container {
      width:100%;
      margin-left:0;
+     border-left: 50px solid var(--accent);
    }
    #outer {
      margin-left:0;
