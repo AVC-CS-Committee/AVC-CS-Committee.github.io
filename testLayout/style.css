@@ -1,0 +1,29 @@
+body {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+}
+
+.bigBox {
+    display: flex;
+    border: 2px dotted purple;
+    border-radius: 10px;
+    max-width: 50em;
+    margin:auto;
+}
+
+.contentBox {
+    border: 2px solid chocolate;
+    border-radius: 10px;
+    width: 60vw;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+#navBox {
+    border: 2px dotted blue;
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 8em;
+}
