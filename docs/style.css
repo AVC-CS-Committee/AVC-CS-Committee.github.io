@@ -1,128 +1,77 @@
-/* You can either copy the below and paste it between style tags on your HTML page, OR you can copy this to a file and name it .css and link it from your HTML page. */
-
-
-:root {
-  --bg-color:#DCE2BD; /* light green */
-  --pg-color:#f9fcea; /* very light green */
-  --accent:#93C0A4; /* dark green */
-  --accent-2:#8E9B90; /* gray */
-}
-
-*{
-  box-sizing:border-box;
-}
-
-html, body {
-  margin:0;
-  font-family:sans-serif;
-  font-size:1.0em;
-  /* here is where you'd add a background image */
-}
 body {
-  background-color:var(--bg-color);
-}
-#container {
-  background-color:var(--pg-color);
-  width:70%;
-  border-left:100px solid var(--accent);
-  border-right:1px solid var(--accent-2);
-  position:relative;
-}
-#outer {
-  border-left:4px dotted var(--accent-2);
-  margin-left:100px;
-}
-nav {
-  background-color:var(--accent);
-  position:absolute;
-  top:100px;
-  left:50px;
-  border:1px solid var(--bg-color);
-  width:120px;
-  height:220px;
-  z-index:9;
-}
-article { 
-padding:50px;
-  line-height:1.7em;
-  
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: x-large;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Orion_Nebula_in_NIRCam_short-wavelength_channel_ESA25105094.png/3840px-Orion_Nebula_in_NIRCam_short-wavelength_channel_ESA25105094.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: space;
 }
 
-ul.box > li {
-  display: inline-block;
+.bigBox {
+    display: flex;
+    /*border: 2px dotted purple;*/
+    border-radius: 10px;
+    max-width: 50em;
+    margin:auto;
+    margin-top: 3em;
 }
 
-ul.box > li > img {
-  max-width: 12em;
-  border-radius: 50%;
+.left {
+    width: 80%;
 }
 
-img {
-    max-width: 20em;
-    width: 100%;
+.panel {
+    color: white;
+    border: 2px solid olive;
+    border-radius: 10px;
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    background-color: color(from darkGreen srgb r g b / 0.75);
+}
+
+#navBox {
+    border: 2px solid darkmagenta;
+    background-color: color(from magenta srgb r g b / 0.75);
+    border-radius: 10px;
+    padding: 0.5em;
+    width: 8em;
+    height: 10em;
     
 }
 
-img.pfp {
-    max-width: 10em;
-    border-radius: 50%;
+a {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    background-color: black;
 }
 
-h2.subtitle{
-    font-family: Consolas,Menlo,"courier new",monospace;
-    font-style: italic;
+a:link {
+    color: blue;
 }
 
-h2 {
-  font-size:20px;
-  border-bottom:1px solid var(--accent-2);
-  padding-bottom:8px;
+a:visited {
 }
-nav > ul {
-  background-color:var(--accent-2);
-  margin:20px;
-  padding:0;
-  list-style:none;
+
+a:hover {
+    color: yellow;
 }
-nav > ul > li {
-  border-bottom:1px solid white;
-  text-align:center;
+
+a:active {
+    color: black;
+    background-color: unset;
+    border: unset;
 }
-nav > ul > li:last-child {
-  border-bottom:none;
-  text-align:center;
+
+.title {
+    text-align: center;
 }
-nav > ul > li > a {
-  font-size:15px;
-  padding-top:5px;
-  padding-bottom:5px;
-  display:inline-block;
-  color:white;
-}
- @media only screen and (max-width: 850px) {
-   nav {
-     position: inherit;
-     width: 100%;
-     height: auto ;
-     border: 1px solid var(--accent);
-   }
-   nav > ul {
-      display: flex;
-      margin: 10px;
-      justify-content: space-evenly;
-   }
-   nav > ul > li {
-      margin: 5px;
-   }
-   nav > ul > li:last-child {
-      border-bottom: 1px solid white;
-   }
-   #container {
-     width:100%;
-     margin-left:0;
-     border-left: 50px solid var(--accent);
-   }
-   #outer {
-     margin-left:0;
-   }
+
+img {
+    max-width: 20vw;
+    width: 80%;
 }

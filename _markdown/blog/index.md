@@ -1,8 +1,8 @@
 ---
-layout: "layout_main.html"
-title: Blog Posts
-subtitle: /blog
-edited: August 15, 2025
+title: blog
+layout: layout_regular.html
 ---
 
-* [Hello World](/blog/helloworld)
+# Blog
+
+- [Example Post](example-post)

@@ -11,23 +11,39 @@ body {
 
 .bigBox {
     display: flex;
-    border: 2px dotted purple;
+    /*border: 2px dotted purple;*/
     border-radius: 10px;
     max-width: 50em;
     margin:auto;
+    margin-top: 3em;
 }
 
-.contentBox {
-    border: 2px solid chocolate;
+.left {
+    width: 80%;
+}
+
+.panel {
+    border: 2px solid olive;
     border-radius: 10px;
-    width: 60vw;
-    padding: 1em;
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
     margin-right: 1em;
+    margin-bottom: 0.5em;
+    background-color: color(from darkGreen srgb r g b / 0.75);
 }
 
 #navBox {
-    border: 2px dotted blue;
+    border: 2px solid darkmagenta;
+    background-color: color(from magenta srgb r g b / 0.75);
     border-radius: 10px;
     padding: 0.5em;
     width: 8em;
+    height: 10em;
+    
+}
+
+
+.title {
+    text-align: center;
 }
