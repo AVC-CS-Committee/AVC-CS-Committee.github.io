@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^2.0.4",
-    "eleventy": "^1.0.7"
+    "eleventy": "^1.0.7",
+    "markdown-it": "^14.1.1",
+    "markdown-it-footnote": "^4.0.0"
   }
 }
