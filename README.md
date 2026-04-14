@@ -14,25 +14,27 @@ In order to make additions to the site, please use the static site generator. __
 
 # Setup your environment
 
-To start, you will need to have `git` and `npm` installed.
+Prerequisites:
+
+1) Install [git](https://git-scm.com/install/), [git for windows](https://gitforwindows.org/), or [github desktop](https://desktop.github.com/download/)
+2) Install [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Clone the repo
 
-`git clone https://github.com/AVC-CS-Committee/AVC-CS-Committee.github.io`
+```
+git clone https://github.com/AVC-CS-Committee/AVC-CS-Committee.github.io
 
-navigate into that folder
-
-`cd AVC-CS-Committee.github.io`
+cd AVC-CS-Committee.github.io
+```
 
 ## Installing required node packages
 
-To install all dependencies (including Eleventy), navigate to the _markdown folder (which is where we install our node packages to):
+To install all dependencies (including Eleventy), run:
 
-`cd _markdown`
-
-Then tell npm to install all dependencies:
-
-`npm install`
+```
+cd _markdown
+npm install 
+```
 
 # Making changes to the site
 
@@ -42,13 +44,26 @@ Navigate to the `_markdown` folder and create some file `[filename].md`. A corre
 
 ## Editing a page
 
-Simply navigate to the existing markdown file in `_markdown`, edit the file, then run `npx @11ty/eleventy --serve` in order to build the site (and also run a live server that lets you view your changes).
+Simply find and edit the existing markdown file in `_markdown` that corresponds to the page you would like to see changed. After saving the file, make sure your terminal is in the `_markdown` folder, then run `npx @11ty/eleventy --serve` to build and serve the site. You can preview your changes at the localhost link provided in the terminal.
 
 Once you've confirmed everything looks good, quit the live server (press Ctrl+C), then commit your changes.
 
-## Editing a template
+## Editing a layout
 
-Templates are located in `_markdown/_includes/`. You can create as many templates as you like, and you can add rules to each file for which template to use. These templates are written in HTML. Simply edit or create a template, edit any metadata on markdown files (if needed), then run eleventy to apply changes to the site.
+Layouts are located in `_markdown/_includes/`. You can create as many layouts as you like, and you can add rules to each file for which layout to use. These layouts are written in HTML. Simply edit or create a layout, edit any metadata on markdown files (if needed), then run eleventy to apply changes to the site.
+
+You specify the layout for a given page by placing this at the top of the markdown file:
+
+```
+---
+title: my title
+layout: layout.html
+---
+```
+
+replacing `layout.html` with the filename of your layout file.
+
+**Note**: Remember that since the layout file is applied to many pages, any modifications you make will apply to all of those pages. If you want to make changes to just one particular page, please create a *new* layout file, and specify it for that page.
 
 ## Adding files to the site (images, style.css, etc)
 
