@@ -1,5 +1,5 @@
 ---
-layout: "layout_main.html"
+layout: "old/layout_main.html"
 title: Blog Posts
 subtitle: /blog
 edited: August 15, 2025

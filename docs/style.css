@@ -1,5 +1,6 @@
 body {
-    font-family: "Gloria Hallelujah", cursive;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: x-large;
@@ -74,4 +75,25 @@ a:active {
 img {
     max-width: 20vw;
     width: 80%;
+}
+
+img.pfp {
+    float: right;
+    border-radius: 50%;
+    width: 12em;
+    max-width: 20em;
+    margin: 0.5em;
+}
+
+img.pfp-list {
+    border-radius: 50%;
+    width: 8em;
+    max-width: 20em;
+    margin: 0.2em;
+    margin-right: 1em;
+}
+
+.name {
+    display: inline;
+    vertical-align: center;
 }

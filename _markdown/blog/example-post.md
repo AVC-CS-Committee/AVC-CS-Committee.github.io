@@ -1,8 +1,9 @@
 ---
-title: Example Post
-layout: layout_regular.html
+title: Example Title
+by-name: River Seeber
+by-link: /people/river
+edited: April 14, 2026
+tags: ["blog", "river"]
 ---
-
-# Example Post
 
 Hello world

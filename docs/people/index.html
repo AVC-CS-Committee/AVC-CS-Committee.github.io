@@ -6,9 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 
-    <title>{{title}}</title>
+    <title>People</title>
 </head>
 <body>
     <!-- Used to create left + right padding for background -->
@@ -17,37 +18,17 @@
         <div class="left">
             <!-- MAIN PANEL -->
             <div class="panel">
-                {{content}}
+                <h1>People</h1>
+<hr>
+<ul class="box"><div id="people-box">
+        <img src=/images/pfp/river.jpg alt="River, wearing a leather jacket, and taking a selfie in front of the mirror" class="pfp-list">
+        <h1 class="name" style="display: inline;"><a href="/people/river/">River Seeber</a></h1>
+    </div>
+    <br>
+    <br></ul>
             </div>
 
-            <!-- REPEAT PANELS -->
-            {%- if page.panel1 -%}
-            <div class="panel" id="panel1">
-                {% markdown %}{% renderBox "panel1" %}{% endmarkdown %}
-            </div>
-            {%- endif -%}
-
-            {%- if page.panel2 -%}
-            <div class="panel" id="panel2">
-                {% markdown %}{% renderBox "panel2" %}{% endmarkdown %}
-            </div>
-            {%- endif -%}
-            {%- if page.panel3 -%}
-            <div class="panel" id="panel3">
-                {% markdown %}{% renderBox "panel3" %}{% endmarkdown %}
-            </div>
-            {%- endif -%}
-            {%- if page.panel4 -%}
-            <div class="panel" id="panel4">
-                {% markdown %}{% renderBox "panel4" %}{% endmarkdown %}
-            </div>
-            {%- endif -%}
-            {%- if page.panel5 -%}
-            <div class="panel" id="panel5">
-                {% markdown %}{% renderBox "panel5" %}{% endmarkdown %}
-            </div>
-            {%- endif -%}
-        </div>
+            <!-- REPEAT PANELS --></div>
         <!-- This holds the navbar -->
         <div id="navBox">
             <ul>
@@ -58,7 +39,7 @@
                     <a href="/blog/">Blog</a>
                 </li>
                 <li>
-                    <a href="/kaldj">link</a>
+                    <a href="/people/">People</a>
                 </li>
                 <li>
                     <a href="#">link</a>

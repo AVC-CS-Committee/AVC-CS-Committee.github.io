@@ -1,5 +1,5 @@
 ---
-layout: "layout_regular.html"
+layout: "regular.html"
 title: "AVC CS Club"
 subtitle: "/home"
 edited: "August 22, 2025"

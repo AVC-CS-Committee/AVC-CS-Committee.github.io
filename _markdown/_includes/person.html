@@ -1,0 +1,23 @@
+---
+layout: regular.html
+---
+<div class="titleBox">
+<img class="pfp" src={{image}} alt="{{alt-text}}">
+<h1>{{ title }}</h1>
+</header>
+<h2 class="subtitle">{{ subtitle }}</h2>
+<p><em>Last edited: {{ edited }}</em></p>
+</div>
+
+{{ content }}
+
+<!--List all of the blog posts by this person at the end of their profile-->
+{%- if collections[username] -%}
+<hr>
+<h1>Blog Posts:</h1> 
+<ul>
+{%- for post in collections[username] -%}
+<li><a href={{post.url}}>{{post.data.title}}</a>, <em>{{post.data.edited}}</em>
+{%- endfor -%}
+</ul>
+{%- endif -%}

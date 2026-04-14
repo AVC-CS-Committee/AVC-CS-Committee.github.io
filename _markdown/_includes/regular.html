@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
 
-    <title>blog</title>
+    <title>{{title}}</title>
 </head>
 <body>
     <!-- Used to create left + right padding for background -->
@@ -18,10 +18,37 @@
         <div class="left">
             <!-- MAIN PANEL -->
             <div class="panel">
-                <h1> Blog </h1><li><a href=/blog/example-post/>Example Title</a> by River Seeber&ensp;&mdash;&ensp;<em>April 14, 2026</em></li><br>
+                {{content}}
             </div>
 
-            <!-- REPEAT PANELS --></div>
+            <!-- REPEAT PANELS -->
+            {%- if page.panel1 -%}
+            <div class="panel" id="panel1">
+                {% markdown %}{% renderBox "panel1" %}{% endmarkdown %}
+            </div>
+            {%- endif -%}
+
+            {%- if page.panel2 -%}
+            <div class="panel" id="panel2">
+                {% markdown %}{% renderBox "panel2" %}{% endmarkdown %}
+            </div>
+            {%- endif -%}
+            {%- if page.panel3 -%}
+            <div class="panel" id="panel3">
+                {% markdown %}{% renderBox "panel3" %}{% endmarkdown %}
+            </div>
+            {%- endif -%}
+            {%- if page.panel4 -%}
+            <div class="panel" id="panel4">
+                {% markdown %}{% renderBox "panel4" %}{% endmarkdown %}
+            </div>
+            {%- endif -%}
+            {%- if page.panel5 -%}
+            <div class="panel" id="panel5">
+                {% markdown %}{% renderBox "panel5" %}{% endmarkdown %}
+            </div>
+            {%- endif -%}
+        </div>
         <!-- This holds the navbar -->
         <div id="navBox">
             <ul>

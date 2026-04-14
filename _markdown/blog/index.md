@@ -1,8 +1,11 @@
 ---
 title: blog
-layout: layout_regular.html
+layout: regular.html
 ---
 
-# Blog
+<h1> Blog </h1>
 
-- [Example Post](example-post)
+{%- for post in collections.blog -%}
+<li><a href={{post.url}}>{{post.data.title}}</a> by {{post.data.by-name}}&ensp;&mdash;&ensp;<em>{{post.data.edited}}</em></li>
+{%- endfor -%}
+<br>

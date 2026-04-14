@@ -1,6 +1,6 @@
 ---
 title: Home
-layout: layout_regular.html
+layout: regular.html
 ---
 
 # Weird Skience
