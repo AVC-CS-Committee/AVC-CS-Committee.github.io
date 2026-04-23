@@ -2,7 +2,7 @@
 title: Learning Strudel
 by-name: Maria Trezha Von Bargen
 by-link: /people/trish
-edited: April 16, 2026
+edited: April 22, 2026
 tags: ["blog", "trish"]
 ---
 
