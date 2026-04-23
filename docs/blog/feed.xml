@@ -4,7 +4,7 @@
   <subtitle>A blog discussing the activities going on in the Computer Science club at AVC</subtitle>
   <link href="https://avc-cs-committee.github.io/blog/feed.xml" rel="self" />
   <link href="https://avc-cs-committee.github.io/blog/" />
-  <updated>2026-04-12T04:52:14Z</updated>
+  <updated>2026-04-20T01:56:00Z</updated>
   <id>https://avc-cs-committee.github.io/blog/</id>
   <author>
     <name>CS Club</name>
@@ -12,7 +12,7 @@
   <entry>
     <title>Example Title</title>
     <link href="https://avc-cs-committee.github.io/blog/example-post/" />
-    <updated>2026-04-12T04:52:14Z</updated>
+    <updated>2026-04-20T01:56:00Z</updated>
     <id>https://avc-cs-committee.github.io/blog/example-post/</id>
     <content type="html">&lt;p&gt;Hello world&lt;/p&gt;
 </content>
