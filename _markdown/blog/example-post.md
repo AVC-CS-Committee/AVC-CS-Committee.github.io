@@ -1,7 +1,7 @@
 ---
 title: Example Title
 by-name: River Seeber
-by-link: /people/river
+username: "river"
 edited: April 14, 2026
 tags: ["blog", "river"]
 ---

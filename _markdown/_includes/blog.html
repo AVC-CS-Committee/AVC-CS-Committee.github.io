@@ -1,9 +1,15 @@
 ---
 layout: regular.html
 ---
+{%- assign author = collections.people
+    | where: "data.username", username
+    | first -%}
 
 <h1>{{ title }}</h1>
-</header>
-<h2 class="subtitle">{{ subtitle }}</h2>
-<p><em>Written by: </em><a href={{by-link}}>{{ by-name }}</a><br> <em>Last edited: {{ edited }}</em></p><hr>
+{%- if subtitle -%}<h2 class="subtitle">{{ subtitle }}</h2>{%- endif -%}
+<img class="pfp-blog" src="{{author.data.image}}" alt="{{author.data.alt}}">
+<p><em>Written by: </em><a href="/people/{{username}}">{{ by-name }}</a></p>
+<p><em>Last edited:</em> {{ edited }}</p>
+<br>
+<hr>
 {{ content }}

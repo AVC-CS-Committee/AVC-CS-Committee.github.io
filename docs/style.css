@@ -93,6 +93,13 @@ img.pfp-list {
     margin-right: 1em;
 }
 
+img.pfp-blog {
+    float: left;
+    border-radius: 50%;
+    width: 5em;
+    margin-right: 1em;
+}
+
 .name {
     display: inline;
     vertical-align: center;
