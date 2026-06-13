@@ -12,16 +12,22 @@
     <title>{{title}}</title>
 </head>
 <body>
-    <!-- Used to create left + right padding for background -->
+
+    <header>
+        <h1>This is the heading 1.</h1>
+        <h2>This is the heading 2.</h2>
+    </header>
+
+    <!-- Used to create left + right padding for background 
     <div class="bigBox">
-        <!-- This is the main content area, excluding navbars and sidebars and such -->
+        <!-- This is the main content area, excluding navbars and sidebars and such --
         <div class="left">
-            <!-- MAIN PANEL -->
+            <!-- MAIN PANEL --
             <div class="panel">
                 {{content}}
             </div>
 
-            <!-- REPEAT PANELS -->
+            <!-- REPEAT PANELS --
             {%- if page.panel1 -%}
             <div class="panel" id="panel1">
                 {% markdown %}{% renderBox "panel1" %}{% endmarkdown %}
@@ -49,7 +55,7 @@
             </div>
             {%- endif -%}
         </div>
-        <!-- This holds the navbar -->
+        <!-- This holds the navbar --
         <div id="navBox">
             <ul>
                 <li>
@@ -67,6 +73,6 @@
             </ul>
 
         </div>
-    </div>
+    </div> -->
 </body>
 </html>
